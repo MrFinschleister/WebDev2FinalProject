@@ -1,0 +1,9 @@
+@font-face { font-family: Poppins; src: url('POPPINS.TTF'); } 
+body {
+    background-image: linear-gradient(to right, black, rgb(100, 100, 100), rgb(150, 150, 150), rgb(100, 100, 100), black); 
+    background-position: center; 
+    background-blend-mode: multiply;
+}
+h1, h2, h3, p, a, button, li, form {
+    font-family: "Poppins";
+}
