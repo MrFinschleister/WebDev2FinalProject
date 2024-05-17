@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-sm-6 align-items-center">  
+                <!--first grade-->
+                <h4>What is your first grade?</h4>
+                <input type="text" id="firstClass" onkeyup="cOne(this.value);">
+                <br>
+                <br>
+                <div class="classType">
+                    <h5>Which type of class is it?</h5>
+                    <input type="radio" id="classOneRegular" name="classOne" value="regular" onkeyup="tOne(this.value);"/>
+                    <label for="classOneRegular">Regular</label>  
+                    <input type="radio" id="classOneHonors" name="classOne" value="honors" onkeyup="tOne(this.value);"/>
+                    <label for="classOneHonors">Honors</label> 
+                    <input type="radio" id="classOneAP" name="classOne" value="ap" onkeyup="tOne(this.value);"/>
+                    <label for="classOneAP">AP</label> 
+                </div>
+            </div>
+            <div class="col-sm-6 align-items-center">  
+                <!--second grade-->
+                <h4>What is your second grade?</h4>
+                <input type="text" id="secondClass" onkeyup="cTwo(this.value);">
+                <br>
+                <br>
+                <div class="classType">
+                    <h4>Which type of class is it?</h4>
+                    <input type="radio" id="classTwoRegular" name="classTwo" value="regular" onkeyup="tTwo(this.value);"/>
+                    <label for="classTwoRegular">Regular</label>  
+                    <input type="radio" id="classTwoHonors" name="classTwo" value="honors" onkeyup="tTwo(this.value);"/>
+                    <label for="classTwoHonors">Honors</label> 
+                    <input type="radio" id="classTwoAP" name="classTwo" value="ap" onkeyup="tTwo(this.value);"/>
+                    <label for="classTwoAP">AP</label> 
+                </div>
+            </div> 
+        </div>
+        <br>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-sm-6 align-items-center">  
+                <!--third grade-->
+                <h4>What is your third grade?</h4>
+                <input type="text" id="thirdClass" onkeyup="cThree(this.value);">
+                <br>
+                <br>
+                <div class="classType">
+                    <h4>Which type of class is it?</h4>
+                    <input type="radio" id="classThreeRegular" name="classThree" value="regular" onkeyup="tThree(this.value);"/>
+                    <label for="classThreeRegular">Regular</label>  
+                    <input type="radio" id="classThreeHonors" name="classThree" value="honors" onkeyup="tThree(this.value);"/>
+                    <label for="classThreeHonors">Honors</label> 
+                    <input type="radio" id="classThreeAP" name="classThree" value="ap" onkeyup="tThree(this.value);"/>
+                    <label for="classThreeAP">AP</label> 
+                </div>
+            </div>
+            <div class="col-sm-6 align-items-center"> 
+                <!--fourth grade-->
+                <h4>What is your fourth grade?</h4>
+                <input type="text" id="fourthClass" onkeyup="cFour(this.value);">
+                <br>
+                <br>
+                <div class="classType">
+                    <h4>Which type of class is it?</h4>
+                    <input type="radio" id="classFourRegular" name="classFour" value="regular" onkeyup="tFour(this.value);"/>
+                    <label for="classFourRegular">Regular</label>  
+                    <input type="radio" id="classFourHonors" name="classFour" value="honors" onkeyup="tFour(this.value);"/>
+                    <label for="classFourHonors">Honors</label> 
+                    <input type="radio" id="classFourAP" name="classFour" value="ap" onkeyup="tFour(this.value);"/>
+                    <label for="classFourAP">AP</label> 
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-sm-6 align-items-center">  
+                <!--fifth grade-->
+                <h4>What is your fifth grade?</h4>
+                <input type="text" id="fifthClass" onkeyup="cFive(this.value);">
+                <br>
+                <br>
+                <div class="classType">
+                    <h4>Which type of class is it?</h4>
+                    <input type="radio" id="classFiveRegular" name="classFive" value="regular" onkeyup="tFive(this.value);"/>
+                    <label for="classFiveRegular">Regular</label>  
+                    <input type="radio" id="classFiveHonors" name="classFive" value="honors" onkeyup="tFive(this.value);"/>
+                    <label for="classFiveHonors">Honors</label> 
+                    <input type="radio" id="classFiveAP" name="classFive" value="ap" onkeyup="tFive(this.value);"/>
+                    <label for="classFiveAP">AP</label> 
+                </div>
+            </div>
+            <div class="col-sm-6 align-items-center">  
+                <!--sixth grade-->
+                <h4>What is your sixth grade?</h4>
+                <input type="text" id="sixthClass" onkeyup="cSix(this.value);">
+                <br>
+                <br>
+                <div class="classType">
+                    <h4>Which type of class is it?</h4>
+                    <input type="radio" id="classSixRegular" name="classSix" value="regular" onkeyup="tSix(this.value);"/>
+                    <label for="classSixRegular">Regular</label>  
+                    <input type="radio" id="classSixHonors" name="classSix" value="honors" onkeyup="tSix(this.value);"/>
+                    <label for="classSixHonors">Honors</label> 
+                    <input type="radio" id="classSixAP" name="classSix" value="ap" onkeyup="tSix(this.value);"/>
+                    <label for="classSixAP">AP</label> 
+                </div>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-sm-6 align-items-center">
+                <!--seventh grade-->
+                <h4>What is your seventh grade?</h4>
+                <input type="text" id="seventhClass" onkeyup="cSeven(this.value);">
+                <br>
+                <br>
+                <div class="classType">
+                    <h4>Which type of class is it?</h4>
+                    <input type="radio" id="classSevenRegular" name="classSeven" value="regular" onkeyup="tSeven(this.value);"/>
+                    <label for="classSevenRegular">Regular</label>  
+                    <input type="radio" id="classSevenHonors" name="classSeven" value="honors" onkeyup="tSeven(this.value);"/>
+                    <label for="classSevenHonors">Honors</label> 
+                    <input type="radio" id="classSevenAP" name="classSeven" value="ap" onkeyup="tSeven(this.value);"/>
+                    <label for="classSevenAP">AP</label> 
+                </div>
+            </div>
+            <div class="col-sm-6 align-items-center">
+                <!--eigth grade-->
+                <h4>What is your eigth grade?</h4>
+                <input type="text" id="eigthClass" onkeyup="cEight(this.value);">
+                <br>
+                <br>
+                <div class="classType">
+                    <h4>Which type of class is it?</h4>
+                    <input type="radio" id="classEightRegular" name="classEight" value="regular" onkeyup="tEight(this.value);"/>
+                    <label for="classEightRegular">Regular</label>  
+                    <input type="radio" id="classEightHonors" name="classEight" value="honors" onkeyup="tEight(this.value);"/>
+                    <label for="classEightHonors">Honors</label> 
+                    <input type="radio" id="classEightAP" name="classEight" value="ap" onkeyup="tEight(this.value);"/>
+                    <label for="classEightAP">AP</label> 
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5">
+            </div>
+            <div class="col-sm-2">
+                <input type="button" id="finishButton" onclick="submit(oneType,twoType,threeType,fourType,fiveType,sixType,sevenType,eightType)">
+            </div>
+            <div class="col-sm-5">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
