@@ -3,7 +3,18 @@ body {
     background-image: linear-gradient(to right, black, rgb(100, 100, 100), rgb(150, 150, 150), rgb(100, 100, 100), black); 
     background-position: center; 
     background-blend-mode: multiply;
+    padding: none;
+    margin: 0px;
 }
 h1, h2, h3, p, a, button, li, form {
     font-family: "Poppins";
+}
+footer {
+    padding: none;
+    margin: 0px;
+    margin-bottom: -15px;
+}
+div {
+    padding: none;
+    margin: 0px;
 }
