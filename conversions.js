@@ -5,6 +5,7 @@ let currencySymbols = {
     MXN: "M$",
     JPY: "¥",
     CAD: "CA$",
+    GBP: "£",
 }
 let measurementConversionRates = {
     millimeter: 10,

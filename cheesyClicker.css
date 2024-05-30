@@ -1,0 +1,262 @@
+@keyframes clickBounce {
+    from {width: 25vw; height: 25vw;}
+    to {width: 22vw; height: 22vw;}
+}
+@keyframes clickBounceBack {
+    from {width: 22vw; height: 22vw;}
+    to {width: 25vw; height: 25vw;}
+}
+@keyframes gunOneShot {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(0.35turn);}
+}
+@keyframes gunOneBack {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(0turn);}
+}
+@keyframes gunTwoShot {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(-0.35turn);}
+}
+@keyframes gunTwoBack {
+    from {transform: rotate(0turn);}
+    to {transform: rotate(0turn);}
+}
+img {
+    height: 10vw;
+    cursor: pointer;
+}
+body {
+    background-image: url('cheeseMedia/cheeseBg.jpeg');
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-size: 1.25vw;
+    touch-action: manipulation;
+}
+p {
+    display: inline;
+}
+h3 {
+    display: inline;
+}
+#infoBox button {
+    padding-left: 2vw;
+    text-align: left;
+    position: absolute;
+    right: 0.5vw;
+    width: 14vw;
+    height: 3vw;
+    border-radius: 10px;
+    border: 2px black solid;
+    background-image: url('cheeseMedia/cheeseBg.jpeg');
+}
+#infoBox div {
+    height: 8vh;
+    width: 14vw;
+    margin-left: 0.75vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+#infoBox .buttonParagraph {
+    height: 2vh;
+    margin-top: 2vh;
+    text-align: center;
+    width: 4vw;
+    position: absolute;
+}
+#infoBox button .buttonParagraph {
+    padding-left: 0.5vw;
+    text-align: left;
+    margin-top: auto;
+}
+.regularCheese {
+    -webkit-text-stroke: gray;
+}
+.specialCheese {
+    -webkit-text-stroke: rgb(172, 147, 0);
+}
+.achievementCheese {
+    -webkit-text-stroke: blue;
+}
+.regularCheese, .specialCheese, .achievementCheese {
+    color: black;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+}
+hr {
+    border: 1px black solid;
+}
+.optionButtons {
+    width: 5vw;
+    height: 1.5vw;
+    margin-top: 0.5vw;
+    margin-left: 0.25vw;
+    margin-right: 0.25vw;
+    border-radius: 10px;
+    border: 1px black solid;
+    background-color:rgba(249, 208, 72, 0.9);
+}
+#soundBox, #minigameBox {
+    text-align: center;
+}
+#soundBox button {
+    width: 8vw;
+    height: 2vw;
+    border-radius: 10px;
+    border: 1px black solid;
+    background-image: url('cheeseMedia/cheeseBg.jpeg');
+    margin: 0.5vw;
+}
+#imageBox img {
+    cursor: auto;
+}
+button {
+    font-size: 1vw;
+}
+#whileAwayPopup {
+    width: 30vw;
+    height: 5vw;
+    position: absolute;
+    left: 0;
+    right: 0; 
+    margin-left: auto;
+    margin-right: auto;
+    top: 0.5vw;
+    border-radius: 5vw;
+    border: 0.25vw black solid;
+    background-color: rgba(249, 208, 72, 0.9);
+}
+#whileAwayPopup h3 {
+    margin-top: 1vw;
+    height: 2vw;
+    text-align: center;
+}
+#gunImageTwo {
+    width: 12.5vw; 
+    height: 12.5vw; 
+    margin-top: 15vh; 
+    position: absolute; 
+    margin-left: -27.5vw; 
+    display: none;
+}
+#cheeseImage {
+    width: 25vw; 
+    height: 25vw; 
+    position: absolute; 
+    margin-left: auto; 
+    margin-right: auto; 
+    left: 0; 
+    right: 0; 
+    z-index: 1;
+}
+#gunImageOne {
+    width: 12.5vw; 
+    height: 12.5vw; 
+    margin-top: 15vh; 
+    position: absolute; 
+    margin-left: 15vw; 
+    display: none;
+}
+#cheeseLevelBox {
+    position: absolute; 
+    left: 0; right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+#testButton {
+    position: absolute; 
+    left: 21vw; 
+    top: 0;
+}
+#info {
+    text-align: center; 
+    margin-top: 38vh;
+}
+#mainDiv {
+    text-align: center; 
+    margin-top: 8vh; 
+    height: 100vh;
+}
+#imageBox {
+    width: 20v.6w; 
+    margin-left: auto;
+}
+.optionButtonsWide {
+    width: fit-content;
+}
+.centeredDiv {
+    text-align: center;
+}
+#minigameBox, #soundBox {
+    position: absolute; 
+    right: 0px; 
+    top: 0px; 
+    width: 20.6vw; 
+    height: 100vh; 
+    border-left: 0.2vw black solid; 
+    background-color: white; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    z-index: 2; 
+    background-color:rgba(249, 208, 72, 0.9); 
+    display: none;
+}
+.soundBoxToggleButton {
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    margin-top: 1vw; 
+    margin-right: 1vw; 
+    height: 2vw; 
+    padding: 0.5vw;
+}
+.minigameBoxToggleButton {
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    margin-top: 4vw; 
+    margin-right: 1vw; 
+    height: 3vw;
+}
+#cheesePerSecond {
+    font-weight: bolder;
+}
+#infoBox {
+    position: absolute; 
+    right: 0px; 
+    top: 0px; 
+    width: 20.6vw; 
+    height: 100vh; 
+    border-left: 0.2vw black solid; 
+    background-color: white; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    z-index: 1; 
+    background-color:rgb(249, 208, 72); 
+    display: inline;
+}
+hr {
+    width: 10vw;
+}
+.seperatorHr {
+    width: 100%;
+    margin-top: 3vh; 
+    margin-bottom: 3vh;
+}
+#infoBox .infoBoxInner {
+    height: fit-content; 
+    text-align: center; 
+    width: 100%; 
+    margin-left: 0vw;
+}
+#imageAndOptionsBox {
+    position: absolute; left: 0px; top: 0px; width: 20.6vw; height: 100vh; border-right: 0.2vw black solid; background-color: rgba(82, 67, 0, 0.75); overflow-y: scroll; overflow-x: hidden; z-index: 1;
+}
+.stackedPricesTop {
+    top: 1vh;
+}
+.stackedPricesBottom {
+    top: 3vh;
+}

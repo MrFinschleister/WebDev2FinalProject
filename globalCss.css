@@ -6,12 +6,13 @@ body {
     padding: none;
     margin: 0px;
 }
-h1, h2, h3, h4, p, a, label, h5, button, li, form {
+h1, h2, h3, h4, h5, label, p, a, button, li, form {
     font-family: "Poppins";
 }
 footer {
     padding: none;
     margin: 0px;
+    top: 100;
     margin-bottom: -15px;
 }
 div {

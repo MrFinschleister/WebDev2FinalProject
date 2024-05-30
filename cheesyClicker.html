@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheesy Clicker</title>
+    <link rel="icon" href="cheeseMedia/cheeseLogo.png">
+    <link rel="stylesheet" href="cheesyClicker.css" type="text/css">
+</head>
+<body onload="load(false)" onbeforeunload="save()">
+    <div id="minigameBox">
+        <h2>Minigames</h2>
+        <img src="cheeseMedia/minigameSprite.jpeg" alt="Minigame Button" onclick="minigameBoxToggle()" class="minigameBoxToggleButton">
+        <a href="minigameRat.html">Rat Simulator</a>
+    </div>
+    <div id="soundBox">
+        <img src="cheeseMedia/sound.jpeg" alt="Sound Button" onclick="soundBoxToggle()" class="soundBoxToggleButton">        
+        <h2>Click Sounds</h2>
+        <button onclick="audioChange(0)">Amogus</button>
+        <button onclick="audioChange(1)">Baby</button>
+        <br>
+        <button onclick="audioChange(2)">Bonk</button>
+        <button onclick="audioChange(3)">Bruh</button>
+        <br>
+        <button onclick="audioChange(4)">Car</button>
+        <button onclick="audioChange(5)">Click</button>
+        <br>
+        <button onclick="audioChange(6)">Huh</button>
+        <button onclick="audioChange(7)">Nails</button>
+        <br>
+        <button onclick="audioChange(8)">Pacman</button>
+        <button onclick="audioChange(9)">Pipe</button>
+        <br>
+        <button onclick="audioChange(10)">Puffer</button>
+        <button onclick="audioChange(11)">Rocket</button>
+        <br>
+        <button onclick="audioChange(12)">Steve</button>
+        <button onclick="audioChange(13)">USA</button>
+        <br>
+        <button onclick="audioChange(14)">Whisk</button>
+        <button onclick="audioChange(15)">Yoda</button>
+    </div>
+    <div id="infoBox">
+        <img src="cheeseMedia/sound.jpeg" alt="Sound Button" onclick="soundBoxToggle()" class="soundBoxToggleButton">
+        <img src="cheeseMedia/minigameSprite.jpeg" alt="Minigame Button" onclick="minigameBoxToggle()" class="minigameBoxToggleButton">
+        <div class="infoBoxInner">
+            <p>Cheese Per Second: </p><br><p id="cheesePerSecond">0</p>
+            <br>
+            <p>Regular Cheese: </p><br><p id="regularCheese" class="regularCheese">0</p>
+            <br>
+            <p>Special Cheese: </p><br><p id="specialCheese" class="specialCheese">0</p>
+            <br>
+            <p>Achievement Cheese: </p><br><p id="achievementCheese" class="achievementCheese">0</p>
+        </div>
+        <hr>
+        <div class="infoBoxInner"><p> Regular Cheese Per Click</p><br><p id="regularAddition">1</p><br><p> Special Cheese Per Click</p><br><p id="specialAddition">1</p></div>
+        <hr class="seperatorHr">
+        <div><p id="regularUpgradeAmount" class="buttonParagraph">0</p><button onclick="regularUpgrade()">Click: <p id="regularUpgradeCost" class="regularCheese buttonParagraph">50</p></button></div>
+        <div><p id="specialUpgradeAmount" class="buttonParagraph">0</p><button onclick="specialUpgrade()">Special Chance: <p id="specialUpgradeCost" class="specialCheese buttonParagraph">10</p></button></div>
+        <div><p id="critUpgradeAmount" class="buttonParagraph">0</p><button onclick="critUpgrade()">Crit Up: <p id="critUpgradeCost" class="specialCheese buttonParagraph">50</p></button></div>
+        <div><p id="autoClickerOneAmount" class="buttonParagraph">0</p><button onclick="autoClickerOne()">Auto Clicker: <p id="autoClickerOneCostRegular" class="regularCheese buttonParagraph stackedPricesTop">1500</p><p id="autoClickerOneCostSpecial" class="specialCheese buttonParagraph stackedPricesBottom">50</p></button></div>
+        <hr>
+        <div><p id="gunUpgradeOne" class="buttonParagraph">LOCKED</p><button onclick="gunUpgradeOne()">Gun: <p id="gunUpgradeOneCost" class="achievementCheese buttonParagraph">1</p></button></div>
+        <div><p id="gunUpgradeTwo" class="buttonParagraph">LOCKED</p><button onclick="gunUpgradeTwo()">Gun 2: <p id="gunUpgradeTwoCost" class="achievementCheese buttonParagraph">5</p></button></div>
+    </div>
+    <div id="imageAndOptionsBox">
+        <div class="centeredDiv">
+            <button onclick="load(true)" class="optionButtons">Load</button>
+            <button onclick="reset()" class="optionButtons">Reset</button>
+            <button onclick="clearImages()" class="optionButtons">Clear</button>
+            <button onclick="printImagesToggle()" class="optionButtons optionButtonsWide">Toggle Images</button>
+        </div>  
+        <div id="imageBox"></div>
+    </div>
+    <div id="mainDiv">
+        <button onclick="test()" id="testButton">Test</button>
+        <a href="index.html"><h1>Cheese</h1></a>
+        <div id="cheeseLevelBox"><h3>Next Cheese at </h3><h3 id="cheeseLevel">1500</h3></div>
+        <img src="cheeseMedia/rocket.jpeg" alt="gun two" id="gunImageTwo" onclick="cheesyFunction(true, 'Two', 4)">
+        <img src="cheeseMedia/cheese.jpeg" alt="cheese" id="cheeseImage" onclick="cheesyFunction(true, false, 1)">
+        <img src="cheeseMedia/gun.jpeg" alt="gun one" id="gunImageOne" onclick="cheesyFunction(true, 'One', 2)">
+    </div>
+    <div id="info">
+    </div>
+    <script src="cheesyClicker.js"></script>
+</body>
+</html>

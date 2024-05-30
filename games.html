@@ -10,15 +10,40 @@
   <body onload="pageLoaded()" class="bg-secondary text-light">
     <nav class="navbar navbar-inverse bg-dark border-bottom border-secondary">
       <div class="navbar-collapse my-2">
-        <a class="navbar-brand nav-link mx-3 text-light d-inline" href="index.html" style="text-decoration: underline;">Home Page</a>
+        <a class="navbar-brand nav-link mx-3 text-light d-inline" href="index.html">Home Page</a>
         <a class="navbar-item nav-link mx-3 text-secondary d-inline" href="conversions.html">Conversion Calculators</a>
         <a class="navbar-item nav-link mx-3 text-secondary d-inline" href="gpaCalculator.html">GPA Calculator</a>
         <a class="navbar-item nav-link mx-3 text-secondary d-inline" href="cheesyClicker.html">Cheesy Clicker</a>
-        <a class="navbar-item nav-link mx-3 text-secondary d-inline" href="#">Games</a>
+        <a class="navbar-item nav-link mx-3 text-secondary d-inline" href="#" style="text-decoration: underline;">Games</a>
         <p id="date" class="navbar-item mx-3 text-secondary d-inline">~~~~~date~~~~~</p>
       </div>
     </nav>
     <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12 my-5">
+          <h2 class="pt-5">Games / Personal Projects</h2>
+        </div>
+      </div>
+      <div class="row my-3 text-center">
+        <div class="col-2"></div>
+        <div class="col-4">
+          <div class="card w-75 m-auto bg-secondary text-light">
+            <h4 class="card-title my-3">Evolution Simulator</h4>
+            <img src="media/evolutionThumbnail.jpeg" alt="Evolution Thumbnail" class="w-50 m-auto">
+            <a href="organisms.html" class="text-light my-3">~~link to game~~~</a>
+            <p class="w-75 m-auto bg-dark mb-3 p-2">This project simulates basic evolution through the use of randomly generated "organisms" with receptors and actions. After the set number of turns finishes, its selects survivors by provided criteria and then repopulates the next generation with these survivors.</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card w-75 m-auto bg-secondary text-light">
+            <h4 class="card-title my-3">2D Map</h4>
+            <img src="media/2dMapThumbnail.jpeg" alt="2D Map Thumbnail" class="w-50 m-auto">
+            <a href="minigameRat.html" class="text-light my-3">~~link to game~~~</a>
+            <p class="w-75 m-auto bg-dark mb-3 p-2">This project shows very basic application of arrays and event listeners to generate a map and allow for the player to move a rat. This was initially inteded as a side game for <a href="https://cheesyclicker.elimastey.com/">Cheesy Clicker</a>, but it was repurposed here without a few functions specific to <a href="https://cheesyclicker.elimastey.com/">Cheesy Clicker</a></p>
+          </div>
+        </div>
+        <div class="col-2"></div> 
+      </div>
     </div>
     <footer class="footer footer-inverse bg-dark border-top border-secondary w-100">
       <p class="my-3">Sammy Friedland / Eli Mastey</p>
