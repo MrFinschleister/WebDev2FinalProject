@@ -6,7 +6,7 @@ body {
     padding: none;
     margin: 0px;
 }
-h1, h2, h3, p, a, button, li, form {
+h1, h2, h3, h4, p, a, label, h5, button, li, form {
     font-family: "Poppins";
 }
 footer {
