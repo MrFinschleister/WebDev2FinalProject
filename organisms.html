@@ -33,6 +33,12 @@
                 <button onclick="changeCriteria(1)">Right</button>
                 <button onclick="changeCriteria(2)">Top</button>
                 <button onclick="changeCriteria(3)">Bottom</button>
+                <p id="genesPerOrganism" class="mt-2">Genes Per Organism: 3</p>
+                <button onclick="genes(1)">More Genes</button> 
+                <button onclick="genes(-1)">Less Genes</button>
+                <p id="movesPerOrganism" class="mt-2">Moves Per Organism: 1</p>
+                <button onclick="moves(1)">More Moves</button> 
+                <button onclick="moves(-1)">Less Moves</button>
             </div>
             <div class="col-6">
                 <canvas id="canvas" width="500" height="500" style="border: 1px gray solid; background-color: black;"></canvas>
@@ -57,7 +63,7 @@
         let genesPerOrganism = 3
         let movesPerOrganism = 1
         let turns = 0
-        let totalTurns = 10
+        let totalTurns = 100
         let turnsUntilDeath = 50
         let baseTurnsUntilDeath = turnsUntilDeath
         let allowKilling = false
@@ -729,13 +735,27 @@
             }
         }
         function guys(x) {
-            totalOrganisms += x
+            if (totalOrganisms + x > 0) {
+                totalOrganisms += x
+            }
             document.getElementById("numberOfGuys").innerHTML = "# of Guys: " + totalOrganisms
         }
         function changeCriteria(x) {
             let keys = Object.keys(selections)
             currentSelection = keys[x]
             document.getElementById("selectionCritia").innerHTML = "Selection Criteria: " + currentSelection
+        }
+        function genes(x) {
+            if (genesPerOrganism + x > 0) {
+                genesPerOrganism += x
+            } 
+            document.getElementById("genesPerOrganism").innerHTML = "Genes Per Organism: " + genesPerOrganism
+        }
+        function moves(x) {
+            if (movesPerOrganism + x > 0 && movesPerOrganism + x <= genesPerOrganism) {
+                movesPerOrganism += x
+            }
+            document.getElementById("movesPerOrganism").innerHTML = "Moves Per Oerganism: " + movesPerOrganism
         }
     </script>
     </div>
